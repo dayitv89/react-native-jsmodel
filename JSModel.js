@@ -20,5 +20,9 @@ export default class JSONModel {
       delete this[hash[key]];
     }
   }
+  
+  clone() {
+    return new this.constructor(JSON.parse(JSON.stringify(this)));
+  }
 
 }
