@@ -1,6 +1,6 @@
 {
   "name": "jsmodel",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "JSON parse into JS model as same as JSONModel or object mapper in iOS.",
   "main": "JSModel.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/dayitv89/JSModel/issues"
   },
   "homepage": "https://github.com/dayitv89/JSModel#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-node6": "^11.0.0"
   }
