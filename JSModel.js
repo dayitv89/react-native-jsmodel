@@ -13,6 +13,8 @@ export default class JSONModel {
 		return typeof json !== 'undefined';
 	}
 
+	// id => appID, first_name => firstName
+	// pass args as `{id: 'appID', first_name: 'firstName'}`
 	keyMapper(hash) {
 		for (const key in hash) {
 			this[hash[key]] = this[key];
