@@ -23,7 +23,7 @@ import JSModel from 'react-native-jsmodel';
 
 export default class MockModel extends JSModel {
 	message() {
-		return 'This message added by JSModel: ' + this.error.message;
+		return 'This message added by JSModel: ' + this.errorMessage;
 	}
 }
 ```
@@ -103,6 +103,33 @@ modelObj.print();
 modelObj.common.show();
 console.log(modelObj.common.name);
 console.log(JSON.stringify(modelObj, null, 2));
+```
+
+
+### KeyMapper
+```js
+const json = {
+              first_name: 'James',
+              last_name: 'Bond'
+            };
+
+export default class MockModel extends JSModel {
+	constructor(json) {
+	    super(json);
+	    if (this.validate(json)) {
+				this.keyMapper({first_name: 'firstName', last_name: 'lastName'});
+	    }
+	}
+
+	name() {
+		return this.firstName + ' ' + this.lastName;
+	}
+}
+
+const modelObj = new MockModel(json);
+console.log(modelObj.firstName); // James
+console.log(modelObj.name()); // James Bond
+console.log(modelObj.first_name); // undefined
 ```
 
 To test this demo code run: `$ npm i && npm start`

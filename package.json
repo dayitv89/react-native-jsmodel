@@ -1,30 +1,24 @@
 {
-  "name": "react-native-jsmodel",
-  "version": "0.0.1",
-  "description": "JSON parse into JS model as same as JSONModel or object mapper in iOS.",
-  "main": "JSModel.js",
-  "scripts": {
-    "start": "node ./node_modules/babel-cli/bin/babel-node.js --presets node6 demo/DemoJSModel.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dayitv89/react-native-jsmodel.git"
-  },
-  "keywords": [
-    "JSONModel",
-    "JSON model",
-    "JSON mapper",
-    "JS object mapper",
-    "JS model"
-  ],
-  "author": "Gaurav D. Sharma",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dayitv89/react-native-jsmodel/issues"
-  },
-  "homepage": "https://github.com/dayitv89/react-native-jsmodel#readme",
-  "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-node6": "^11.0.0"
-  }
+	"name": "react-native-jsmodel",
+	"version": "0.0.2",
+	"description": "JSON parse into JS model as same as JSONModel or object mapper in iOS.",
+	"main": "JSModel.js",
+	"scripts": {
+		"start": "node ./node_modules/babel-cli/bin/babel-node.js --presets node6 demo/DemoJSModel.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dayitv89/react-native-jsmodel.git"
+	},
+	"keywords": ["JSONModel", "JSON model", "JSON mapper", "JS object mapper", "JS model"],
+	"author": "Gaurav D. Sharma",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dayitv89/react-native-jsmodel/issues"
+	},
+	"homepage": "https://github.com/dayitv89/react-native-jsmodel#readme",
+	"devDependencies": {
+		"babel-cli": "^6.23.0",
+		"babel-preset-node6": "^11.0.0"
+	}
 }

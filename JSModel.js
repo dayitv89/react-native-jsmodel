@@ -5,24 +5,22 @@
 'use strict';
 
 export default class JSONModel {
+	constructor(json) {
+		this.validate(json) && Object.assign(this, json);
+	}
 
-  constructor(json) {
-    this.validate(json) && Object.assign(this, json);
-  }
+	validate(json) {
+		return typeof json !== 'undefined';
+	}
 
-  validate(json) {
-    return (typeof json !== 'undefined');
-  }
+	keyMapper(hash) {
+		for (const key in hash) {
+			this[hash[key]] = this[key];
+			delete this[key];
+		}
+	}
 
-  keyMapper(hash) {
-    for (const key in hash) {
-      this[key] = this[hash[key]];
-      delete this[hash[key]];
-    }
-  }
-  
-  clone() {
-    return new this.constructor(JSON.parse(JSON.stringify(this)));
-  }
-
+	clone() {
+		return new this.constructor(JSON.parse(JSON.stringify(this)));
+	}
 }
