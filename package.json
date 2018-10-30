@@ -1,6 +1,6 @@
 {
 	"name": "react-native-jsmodel",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "JSON parse into JS model as same as JSONModel or object mapper in iOS.",
 	"main": "JSModel.js",
 	"scripts": {
@@ -10,7 +10,13 @@
 		"type": "git",
 		"url": "git+https://github.com/dayitv89/react-native-jsmodel.git"
 	},
-	"keywords": ["JSONModel", "JSON model", "JSON mapper", "JS object mapper", "JS model"],
+	"keywords": [
+		"JSONModel",
+		"JSON model",
+		"JSON mapper",
+		"JS object mapper",
+		"JS model"
+	],
 	"author": "Gaurav D. Sharma",
 	"license": "MIT",
 	"bugs": {
