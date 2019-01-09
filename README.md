@@ -1,6 +1,6 @@
 # react-native-jsmodel: JSModel
 
-![version](https://img.shields.io/badge/version-0.0.1-green.svg)
+![version](https://img.shields.io/badge/version-0.0.4-green.svg)
 
 ### Preface
 
