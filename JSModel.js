@@ -29,7 +29,7 @@ export default class JSONModel {
 	}
 
 	clone() {
-		return new this.constructor(JSON.parse(this.toJSON()));
+		return Object.assign(Object.create(this), this);
 	}
 
 	toJSON() {
