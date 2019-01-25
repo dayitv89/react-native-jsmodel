@@ -4,8 +4,6 @@
 //
 'use strict';
 
-require('./JSONPruned');
-
 export default class JSONModel {
 	constructor(json = {}) {
 		if (this.validate(json)) {
@@ -32,9 +30,5 @@ export default class JSONModel {
 
 	clone() {
 		return Object.assign(Object.create(this), this);
-	}
-
-	toJSON() {
-		return JSON.pruned(this);
 	}
 }
